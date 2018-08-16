@@ -27,3 +27,8 @@
     font-family: Amplify;
     src: "css/fonts/Amplify.ttf";
         }
+    
+@font-face {
+    font-family: AllAges;
+    src: "css/fonts/AllAgesDEMO.ttf";
+}

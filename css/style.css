@@ -2,7 +2,7 @@ body {
     height: 100%;
     width: 100%;
     display: flex;
-    background-color: grey;
+    background-color: lightgrey;
 }
 
 aside {
@@ -44,48 +44,73 @@ a {
 main {
     width: 80%;
     height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+/* stack of flyers */
 #about {
     background: linear-gradient(#dede78,#edc585);
     width: 50vh;
     height: 75vh;
-    margin: 5% 20%;
+    margin: 0;
     transform: rotate(-10deg);
     border: 2px solid #FFFFFF;
     position: absolute;
 }
 
 #projects {
-    background: linear-gradient(#dede78,#edc585);
+    background: linear-gradient(#a490b8,#a481eb);
     width: 50vh;
     height: 75vh;
-    margin: 5% 20%;
+    margin: 0;
     transform: rotate(-15deg);
     border: 2px solid #FFFFFF;
     position: absolute;
-
 }
 
 #testimonials {
-    background: linear-gradient(#dede78,#edc585);
+    background: linear-gradient(#90c192,#cde98a);
     width: 50vh;
     height: 75vh;
-    margin: 5% 20%;
+    margin: 0;
     transform: rotate(-8deg);
     border: 2px solid #FFFFFF;
-
     position: absolute;
-
 }
 
 #contact {
     background: linear-gradient(#dede78,#edc585);
     width: 50vh;
     height: 75vh;
-    margin: 5% 20%;
+    margin: 0;
     transform: rotate(-5deg);
     border: 2px solid #FFFFFF;
-
     position: absolute;
+}
+
+h1 {
+    font-family: AHDN;
+    color: #000000;
+    width: 50vh;
+    height: 71vh;
+    margin: 0;
+    transform: rotate(-10deg);
+    font-size: 3em;
+    letter-spacing: 1.75px;
+    position: absolute;
+    text-align: center;
+}
+
+p {
+    font-family: AHDN;
+    width: 45vh;
+    height: 0;
+    transform: rotate(-10deg);
+    margin: 0;
+    text-align: justify;
+    position: absolute;
+    letter-spacing: .5px;
 
 }
