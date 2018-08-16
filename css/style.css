@@ -50,8 +50,8 @@ main {
 }
 
 /* stack of flyers */
-#about {
-    background: linear-gradient(#dede78,#edc585);
+.about {
+    background: linear-gradient(#f96437, #f0f065, #0e83e9);
     width: 50vh;
     height: 75vh;
     margin: 0;
@@ -60,7 +60,7 @@ main {
     position: absolute;
 }
 
-#projects {
+.projects {
     background: linear-gradient(#a490b8,#a481eb);
     width: 50vh;
     height: 75vh;
@@ -70,7 +70,7 @@ main {
     position: absolute;
 }
 
-#testimonials {
+.testimonials {
     background: linear-gradient(#90c192,#cde98a);
     width: 50vh;
     height: 75vh;
@@ -80,7 +80,7 @@ main {
     position: absolute;
 }
 
-#contact {
+.contact {
     background: linear-gradient(#dede78,#edc585);
     width: 50vh;
     height: 75vh;
@@ -94,13 +94,24 @@ h1 {
     font-family: AHDN;
     color: #000000;
     width: 50vh;
-    height: 71vh;
+    height: 70vh;
     margin: 0;
     transform: rotate(-10deg);
     font-size: 3em;
     letter-spacing: 1.75px;
     position: absolute;
     text-align: center;
+}
+
+img {
+    width: 30%;
+    height: 22%;
+/* fix margins */
+    margin-top: -10%;
+    margin-left: -2%;
+    transform: rotate(-10deg);
+    position: absolute;
+    /* border: 1px solid #000000; */
 }
 
 p {
