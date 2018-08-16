@@ -2,6 +2,7 @@ body {
     height: 100%;
     width: 100%;
     display: flex;
+    background-color: grey;
 }
 
 aside {
@@ -48,18 +49,20 @@ main {
     background: linear-gradient(#dede78,#edc585);
     width: 50vh;
     height: 75vh;
-    /* margin: 5% auto; */
+    margin: 5% 20%;
     transform: rotate(-10deg);
     border: 2px solid #FFFFFF;
+    position: absolute;
 }
 
 #projects {
     background: linear-gradient(#dede78,#edc585);
     width: 50vh;
     height: 75vh;
-    margin: 5% auto;
+    margin: 5% 20%;
     transform: rotate(-15deg);
     border: 2px solid #FFFFFF;
+    position: absolute;
 
 }
 
@@ -67,14 +70,22 @@ main {
     background: linear-gradient(#dede78,#edc585);
     width: 50vh;
     height: 75vh;
-    margin: 5% auto;
+    margin: 5% 20%;
     transform: rotate(-8deg);
+    border: 2px solid #FFFFFF;
+
+    position: absolute;
+
 }
 
 #contact {
     background: linear-gradient(#dede78,#edc585);
     width: 50vh;
     height: 75vh;
-    margin: 5% auto;
+    margin: 5% 20%;
     transform: rotate(-5deg);
+    border: 2px solid #FFFFFF;
+
+    position: absolute;
+
 }
