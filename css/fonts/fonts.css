@@ -1,0 +1,29 @@
+@font-face {
+    font-family: AHDN;
+    src: "css/fonts/AHDN.ttf";
+    }
+    
+@font-face {
+    font-family: Vienna;
+    src: "css/fonts/NTVIENNA.ttf";
+    }
+    
+@font-face {
+    font-family: Pinocchio;
+    src: "css/fonts/Pinocchio.ttf";
+    }
+    
+@font-face {
+    font-family: QuentinCaps;
+    src: "css/fonts/QuentinCaps.ttf";
+    }
+
+@font-face {
+    font-family: York;
+    src: "css/fonts/york-script-es.ttf";
+    }
+
+@font-face {
+    font-family: Amplify;
+    src: "css/fonts/Amplify.ttf";
+        }
