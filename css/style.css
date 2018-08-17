@@ -1,14 +1,14 @@
 body {
     height: 100%;
     width: 100%;
+    max-width: 1300px;
     display: flex;
     background-color: lightgrey;
-}
-
-body img {
-    z-index: 0;
+    background-image: url("assets/tempbackground.jpg");
 
 }
+
+
 
 aside {
     width: 30%;
@@ -37,13 +37,19 @@ nav {
 .btn {
     background: #444444;
     border: 2px solid #fff58b;
-    width: 80%;
-    height: 20%;
-    font-size: 2em;
+    width: 40vh;
+    height: 10vh;
+    font-size: 4.5vh;
     text-align: left;
     letter-spacing: 1.5px;
-    transform: skew(-45deg) rotate(-10deg);
-    margin-left: 8vh;
+    transform: skew(-45deg) rotate(-13deg);
+    margin-left: 10vh;
+}
+
+.btn:hover {
+    background: #fff58b;
+    border: 2px solid #444444;
+    color: #444444;
 }
 
 /* a {
@@ -82,7 +88,7 @@ main {
     height: 10vh;
     padding: 5% 0%;
     margin: 0;
-    font-size: 3em;
+    font-size: 7vh;
     letter-spacing: 3px;
     position: relative;
     text-align: center;
@@ -91,19 +97,21 @@ main {
 
 .about img {
     width: 75%;
-    height: 20vh;
+    height: 25vh;
     margin: 0 auto;
     position: relative;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
+    filter: grayscale(100%) contrast(70%);
     z-index: 4;
 }
 
 .about p {
     width: 90%;
     height: 20vh;
-    margin: 10% auto;
+    margin: 0 auto;
     text-align: justify;
     position: relative;
+    font-size: 3vh;
     letter-spacing: .5px;
     z-index: 4;
 
@@ -131,7 +139,7 @@ main {
     width: 50vh;
     height: 10vh;
     margin: 5% auto;
-    font-size: 4em;
+    font-size: 12vh;
     position: relative;
     text-align: center;
     letter-spacing: 5px;
@@ -158,7 +166,7 @@ main {
     height: 10vh;
     margin: 5% auto;
     transform: rotate(-3deg);
-    font-size: 3em;
+    font-size: 8vh;
     position: relative;
     text-align: center;
     z-index: 2;
@@ -169,7 +177,7 @@ main {
     height: 20vh;
     margin: 5% auto;
     position: relative;
-    transform: rotate(12deg);
+    transform: rotate(11deg);
     border: 1px solid #000000;
     z-index: 2;
 }
@@ -177,9 +185,11 @@ main {
 .testimonials p {
     font-family: AllAgesDEMO;
     font-style: italic;
+    font-size: 2.5vh;
+    text-align: justify;
     width: 90%;
-    height: 5vh;
-    margin: 0 auto;
+    height: 35vh;
+    margin: 2% auto;
     transform: rotate(3deg);
     position: relative;
     z-index: 2;
