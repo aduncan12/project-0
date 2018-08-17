@@ -77,17 +77,17 @@ h1 {
 
 }
 
-img {
+/* img {
     width: 30%;
-    height: 22%;
+    height: 22%; */
 /* fix margins */
-    margin-top: -10%;
+    /* margin-top: -10%;
     margin-left: -2%;
     transform: rotate(-10deg);
     position: absolute;
-    /* border: 1px solid #000000; */
+    border: 1px solid #000000;
     z-index: 4;
-}
+} */
 
 p {
     font-family: AHDN;
@@ -111,10 +111,11 @@ p {
     transform: rotate(-15deg);
     border: 2px solid #FFFFFF;
     position: absolute;
-    z-index: 5;
+    z-index: 3;
 }
 
 h2 {
+    /* look into curving header with jquery */
     font-family: Flames;
     color: #ff8400;
     text-shadow: 1px 1px #FFFFFF;
@@ -126,11 +127,11 @@ h2 {
     position: absolute;
     text-align: center;
     letter-spacing: 5px;
-    z-index: 5;
+    z-index: 3;
 }
 
 .testimonials {
-    background: linear-gradient(#90c192,#cde98a);
+    background: #f5f4f4;
     width: 50vh;
     height: 75vh;
     margin: 0;
@@ -140,8 +141,29 @@ h2 {
     z-index: 2;
 }
 
+h3 {
+    font-family: 'CF PunkRockShow';
+    color: #131212;
+    width: 50vh;
+    height: 68vh;
+    margin: 0;
+    transform: rotate(-10deg);
+    font-size: 3em;
+    line-height: .6;
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+}
+
+div.testimonials > p {
+    font-family: AllAgesDEMO;
+    font-style: italic;
+    transform: rotate(10deg);
+
+}
+
 .contact {
-    background: linear-gradient(#dede78,#edc585);
+    background: linear-gradient(#90c192,#cde98a);
     width: 50vh;
     height: 75vh;
     margin: 0;
