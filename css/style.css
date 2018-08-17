@@ -50,6 +50,7 @@ main {
 }
 
 /* stack of flyers */
+/* about flyer */
 .about {
     background: linear-gradient(#f96437, #f0f065, #0e83e9);
     width: 50vh;
@@ -58,36 +59,7 @@ main {
     transform: rotate(-10deg);
     border: 2px solid #FFFFFF;
     position: absolute;
-}
-
-.projects {
-    background: linear-gradient(#a490b8,#a481eb);
-    width: 50vh;
-    height: 75vh;
-    margin: 0;
-    transform: rotate(-15deg);
-    border: 2px solid #FFFFFF;
-    position: absolute;
-}
-
-.testimonials {
-    background: linear-gradient(#90c192,#cde98a);
-    width: 50vh;
-    height: 75vh;
-    margin: 0;
-    transform: rotate(-8deg);
-    border: 2px solid #FFFFFF;
-    position: absolute;
-}
-
-.contact {
-    background: linear-gradient(#dede78,#edc585);
-    width: 50vh;
-    height: 75vh;
-    margin: 0;
-    transform: rotate(-5deg);
-    border: 2px solid #FFFFFF;
-    position: absolute;
+    z-index: 4;
 }
 
 h1 {
@@ -101,6 +73,8 @@ h1 {
     letter-spacing: 1.75px;
     position: absolute;
     text-align: center;
+    z-index: 4;
+
 }
 
 img {
@@ -112,6 +86,7 @@ img {
     transform: rotate(-10deg);
     position: absolute;
     /* border: 1px solid #000000; */
+    z-index: 4;
 }
 
 p {
@@ -123,5 +98,56 @@ p {
     text-align: justify;
     position: absolute;
     letter-spacing: .5px;
+    z-index: 4;
 
 }
+
+/* projects flyer */
+.projects {
+    background: linear-gradient(135deg, #84249f, #f96437);
+    width: 50vh;
+    height: 75vh;
+    margin: 0;
+    transform: rotate(-15deg);
+    border: 2px solid #FFFFFF;
+    position: absolute;
+    z-index: 5;
+}
+
+h2 {
+    font-family: Flames;
+    color: #ff8400;
+    text-shadow: 1px 1px #FFFFFF;
+    width: 50vh;
+    height: 70vh;
+    margin: 0;
+    transform: rotate(-15deg);
+    font-size: 4em;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 5px;
+    z-index: 5;
+}
+
+.testimonials {
+    background: linear-gradient(#90c192,#cde98a);
+    width: 50vh;
+    height: 75vh;
+    margin: 0;
+    transform: rotate(-8deg);
+    border: 2px solid #FFFFFF;
+    position: absolute;
+    z-index: 2;
+}
+
+.contact {
+    background: linear-gradient(#dede78,#edc585);
+    width: 50vh;
+    height: 75vh;
+    margin: 0;
+    transform: rotate(-5deg);
+    border: 2px solid #FFFFFF;
+    position: absolute;
+    z-index: 1;
+}
+

@@ -32,3 +32,8 @@
     font-family: AllAges;
     src: "css/fonts/AllAgesDEMO.ttf";
 }
+
+@font-face {
+    font-family: Flames;
+    src: "css/fonts/Flames.ttf";
+}
