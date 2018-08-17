@@ -55,9 +55,9 @@ main {
     background: linear-gradient(#f96437, #f0f065, #0e83e9);
     width: 54vh;
     height: 82vh;
-    margin: 3%;
-    transform: rotate(-10deg);
-    border: 2px solid #FFFFFF;
+    /* margin: 3%; */
+    transform: rotate(-6deg);
+    border: 2.5px solid #FFFFFF;
     position: absolute;
     z-index: 4;
     display: flex;
@@ -105,9 +105,9 @@ main {
     background: linear-gradient(135deg, #84249f, #f96437);
     width: 54vh;
     height: 82vh;
-    margin: 2.5%;
+    /* margin: 2.5%; */
     transform: rotate(-35deg);
-    border: 2px solid #FFFFFF;
+    border: 3px groove #f96437;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -130,15 +130,14 @@ main {
 }
 
 .testimonials {
-    background: #f5f4f4;
+    background: linear-gradient(#f5f4f4, #e4dfdf);
     width: 54vh;
     height: 82vh;
-    margin: 1%;
+    /* margin: 1%; */
     transform: rotate(-5deg);
-    border: 2px solid #FFFFFF;
     position: absolute;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     z-index: 2;
 }
 
@@ -148,7 +147,7 @@ main {
     width: 50vh;
     height: 10vh;
     margin: 5% auto;
-    transform: rotate(-4deg);
+    transform: rotate(-3deg);
     font-size: 3em;
     position: relative;
     text-align: center;
