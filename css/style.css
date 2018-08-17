@@ -5,6 +5,11 @@ body {
     background-color: lightgrey;
 }
 
+body img {
+    z-index: 0;
+
+}
+
 aside {
     width: 20%;
     display: flex;
@@ -12,7 +17,7 @@ aside {
     height: 90vh;
 }
 
-ul {
+nav {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -33,13 +38,6 @@ a {
     text-decoration: none;
     color: #FFFFFF;
 }
-
-/* nav {
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-    width: 20%;
-} */
 
 main {
     width: 80%;
@@ -129,6 +127,7 @@ main {
     z-index: 3;
 }
 
+/* testimonials flyer */
 .testimonials {
     background: linear-gradient(#f5f4f4, #e4dfdf);
     width: 54vh;
@@ -173,11 +172,11 @@ main {
     transform: rotate(3deg);
     position: relative;
     z-index: 2;
-
 }
 
+/* contact flyer */
 .contact {
-    background: linear-gradient(#90c192,#cde98a);
+    background: linear-gradient(#f0f065,#cde98a, #90c192);
     width: 54vh;
     height: 82vh;
     margin: 0;
@@ -185,5 +184,61 @@ main {
     border: 2px solid #FFFFFF;
     position: absolute;
     z-index: 1;
+    font-family: QuentinCaps;
+    text-align: center;
 }
 
+.contact h1 {
+    color: #131212;
+    width: 50vh;
+    height: 10vh;
+    margin: 5% auto;
+    font-size: 3em;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.contact p {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+form {
+    display: grid;
+    grid-template-rows: 20% 50% 20%;
+    grid-template-columns: repeat(2, 40%);
+    grid-gap: 1% 5%;
+    width: 52vh;
+    height: 25vh;
+    margin: 2% auto;
+}
+
+.message input, textarea {
+    border: 2px solid #000000;
+    padding: 5px;
+}
+#commentName {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    text-align: start;
+}
+
+#commentEmail {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+    text-align: start;
+}
+
+#commentComment {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
+    text-align: start;    
+}
+
+#commentSubmit {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 2;
+}
