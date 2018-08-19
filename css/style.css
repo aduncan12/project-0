@@ -1,10 +1,11 @@
 body {
     height: 100%;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1200px;
     display: flex;
     background-color: lightgrey;
     background-image: url("assets/tempbackground.jpg");
+    background-size: cover;
 
 }
 
@@ -50,10 +51,12 @@ nav {
     color: #444444;
 }
 
-/* a {
-    text-decoration: none;
-    color: #FFFFFF;
-} */
+.btn:focus, .btn-primary:focus {
+    box-shadow: none;
+    background: #fff58b;
+    border: 2px solid #444444;
+    color: #444444;
+}
 
 main {
     width: 70%;
@@ -61,6 +64,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+a {
+    color: #000000;
 }
 
 /* stack of flyers */
@@ -71,7 +78,7 @@ main {
     height: 82vh;
     /* margin: 3%; */
     transform: rotate(6deg);
-    border: 2.5px solid #FFFFFF;
+    border: 3.5px solid #FFFFFF;
     position: absolute;
     z-index: 4;
     display: flex;
@@ -164,7 +171,7 @@ main {
 }
 
 .testimonials h1 {
-    font-family: 'CF PunkRockShow';
+    font-family: 'laundromat_1967';
     color: #131212;
     width: 50vh;
     height: 10vh;
@@ -187,7 +194,7 @@ main {
 }
 
 .testimonials p {
-    font-family: AllAgesDEMO;
+    font-family: 'CF PunkRockShow';
     font-style: italic;
     font-size: 2.5vh;
     text-align: justify;
@@ -206,20 +213,24 @@ main {
     width: 54vh;
     height: 82vh;
     margin: 0;
-    transform: rotate(3deg);
+    transform: rotate(2deg);
     border: 2px solid #FFFFFF;
     position: absolute;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
     font-family: QuentinCaps;
+    font-size: 1em;
     text-align: center;
+    align-items: center;
 }
 
 .contact h1 {
     color: #131212;
     width: 50vh;
-    height: 10vh;
+    height: 5vh;
     margin: 3% auto;
-    font-size: 3em;
+    font-size: 2.5em;
     position: relative;
     text-align: center;
     z-index: inherit;
@@ -227,19 +238,20 @@ main {
 
 .contact p {
     width: 90%;
-    margin: 0 auto;
+    margin: 5% auto;
     position: relative;
     z-index: inherit;
 }
 
 form {
     display: grid;
-    grid-template-rows: 20% 50% 20%;
+    grid-template-rows: 20% 55% 20%;
     grid-template-columns: repeat(2, 40%);
     grid-gap: 1% 5%;
-    width: 52vh;
+    width: 100%;
     height: 25vh;
-    margin: 3% auto;
+    margin: 0 auto;
+    font-size: .75em;
 }
 
 .message input, textarea {
