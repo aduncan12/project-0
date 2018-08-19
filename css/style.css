@@ -66,7 +66,7 @@ main {
 /* stack of flyers */
 /* about flyer */
 .about {
-    background: linear-gradient(#f96437, #f0f065, #0e83e9);
+    background: linear-gradient(#fa3d28, #f0f065, #0e83e9);
     width: 54vh;
     height: 82vh;
     /* margin: 3%; */
@@ -88,7 +88,7 @@ main {
     margin: 0;
     font-size: 7vh;
     letter-spacing: 3px;
-    position: relative;
+    /* position: relative; */
     text-align: center;
     z-index: 4;
 }
@@ -141,7 +141,13 @@ main {
     position: relative;
     text-align: center;
     letter-spacing: 5px;
-    z-index: 3;
+    z-index: inherit;
+}
+
+#carousel {
+    padding: 10% 2%;
+    height: 53%;
+    z-index: inherit;
 }
 
 /* testimonials flyer */
@@ -167,7 +173,7 @@ main {
     font-size: 8vh;
     position: relative;
     text-align: center;
-    z-index: 2;
+    z-index: inherit;
 }
 
 .testimonials img {
@@ -177,7 +183,7 @@ main {
     position: relative;
     transform: rotate(11deg);
     border: 1px solid #000000;
-    z-index: 2;
+    z-index: inherit;
 }
 
 .testimonials p {
@@ -190,7 +196,8 @@ main {
     margin: 2% auto;
     transform: rotate(3deg);
     position: relative;
-    z-index: 2;
+    z-index: inherit;
+    display: none;
 }
 
 /* contact flyer */
@@ -215,14 +222,14 @@ main {
     font-size: 3em;
     position: relative;
     text-align: center;
-    z-index: 1;
+    z-index: inherit;
 }
 
 .contact p {
     width: 90%;
     margin: 0 auto;
     position: relative;
-    z-index: 1;
+    z-index: inherit;
 }
 
 form {
