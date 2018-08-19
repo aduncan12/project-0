@@ -6,7 +6,6 @@ body {
     background-color: lightgrey;
     background-image: url("assets/tempbackground.jpg");
     background-size: cover;
-
 }
 
 aside {
@@ -21,16 +20,13 @@ nav {
     padding: 0;
     width: 100%;
     height: 60%;
-    /* background-color: #444444; */
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     font-family: 'Rockabilly';
-    /* font-size: 2em; */
     border-radius: 13%;
-
 }
 
 .btn {
@@ -53,7 +49,7 @@ nav {
 
 .btn:focus, .btn-primary:focus {
     box-shadow: none;
-    background: #fff58b;
+    background: linear-gradient(to left, #c2ba4c, #fff58b);
     border: 2px solid #444444;
     color: #444444;
 }
@@ -70,13 +66,16 @@ a {
     color: #000000;
 }
 
+a:hover {
+    color: #ffb700;
+}
+
 /* stack of flyers */
 /* about flyer */
 .about {
     background: linear-gradient(#fa3d28, #f0f065, #0e83e9);
     width: 54vh;
     height: 82vh;
-    /* margin: 3%; */
     transform: rotate(6deg);
     border: 3.5px solid #FFFFFF;
     position: absolute;
@@ -93,11 +92,10 @@ a {
     height: 10vh;
     padding: 5% 0%;
     margin: 0;
-    font-size: 7vh;
-    letter-spacing: 3px;
-    /* position: relative; */
+    font-size: 7.5vh;
+    letter-spacing: 1.5px;
     text-align: center;
-    z-index: 4;
+    z-index: inherit;
 }
 
 .about img {
@@ -105,9 +103,8 @@ a {
     height: 25vh;
     margin: 0 auto;
     position: relative;
-    /* border: 1px solid #000000; */
     filter: grayscale(100%) contrast(70%);
-    z-index: 4;
+    z-index: inherit;
 }
 
 .about p {
@@ -118,8 +115,7 @@ a {
     position: relative;
     font-size: 3vh;
     letter-spacing: .5px;
-    z-index: 4;
-
+    z-index: inherit;
 }
 
 /* projects flyer */
@@ -127,7 +123,6 @@ a {
     background: linear-gradient(135deg, #84249f, #f96437);
     width: 54vh;
     height: 82vh;
-    /* margin: 2.5%; */
     transform: rotate(-28deg);
     border: 3px groove #f96437;
     position: absolute;
@@ -159,11 +154,11 @@ a {
 
 /* testimonials flyer */
 .testimonials {
-    background: linear-gradient(#f5f4f4, #e4dfdf);
+    background: #FFFFFF;
+    border: 5px solid #FFFFFF;
     width: 54vh;
     height: 82vh;
-    /* margin: 1%; */
-    transform: rotate(-5deg);
+    transform: rotate(-8deg);
     position: absolute;
     display: flex;
     flex-flow: column wrap;
@@ -171,13 +166,13 @@ a {
 }
 
 .testimonials h1 {
-    font-family: 'laundromat_1967';
+    font-family: Kingthings Extortion;
     color: #131212;
     width: 50vh;
     height: 10vh;
     margin: 5% auto;
     transform: rotate(-3deg);
-    font-size: 8vh;
+    font-size: 6.5vh;
     position: relative;
     text-align: center;
     z-index: inherit;
@@ -187,20 +182,20 @@ a {
     width: 75%;
     height: 20vh;
     margin: 5% auto;
-    position: relative;
+    /* position: relative; */
     transform: rotate(11deg);
-    border: 1px solid #000000;
     z-index: inherit;
 }
 
 .testimonials p {
     font-family: 'CF PunkRockShow';
     font-style: italic;
-    font-size: 2.5vh;
+    font-size: 3vh;
     text-align: justify;
     width: 90%;
     height: 35vh;
-    margin: 2% auto;
+    margin: 4% auto;
+    line-height: 165%;
     transform: rotate(3deg);
     position: relative;
     z-index: inherit;
@@ -213,7 +208,7 @@ a {
     width: 54vh;
     height: 82vh;
     margin: 0;
-    transform: rotate(2deg);
+    transform: rotate(1deg);
     border: 2px solid #FFFFFF;
     position: absolute;
     z-index: 1;
@@ -245,17 +240,17 @@ a {
 
 form {
     display: grid;
-    grid-template-rows: 20% 55% 20%;
-    grid-template-columns: repeat(2, 40%);
-    grid-gap: 1% 5%;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-columns: repeat(2, 49%);
+    grid-gap: 2% 2%;
     width: 100%;
     height: 25vh;
-    margin: 0 auto;
+    margin: 5% auto;
     font-size: .75em;
 }
 
 .message input, textarea {
-    border: 2px solid #000000;
+    border: 1px solid #90c192;
     padding: 5px;
 }
 #commentName {
