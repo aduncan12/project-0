@@ -22,18 +22,21 @@ $('#contact').on('click', function() {
 });
 
 
-
 var testTimer = $(function() {
     $('#test1').fadeIn(5000).fadeOut(5000, function () {
         $('#test2').fadeIn(5000).fadeOut(5000, function () {
-             $('#test3').fadeIn(5000).fadeOut(5000)
+            $('#test3').fadeIn(5000).fadeOut(5000, function() {
+                $(testTimer)
+            })             
         })
     })
 })
 
+
 // setInterval(function() {
-//     testTimer
-// })
-
-
-
+//     $('#test1').fadeIn(5000).fadeOut(5000, function () {
+//         $('#test2').fadeIn(5000).fadeOut(5000, function () {
+//              $('#test3').fadeIn(5000).fadeOut(5000)            
+//         })
+//     })
+// }, 1000);
