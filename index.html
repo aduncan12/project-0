@@ -36,8 +36,41 @@
         <!-- </nav> -->
     </aside>
     
-    <main>
+    <header><!--Navbar-->
+        <nav class="navbar navbar-light navbar-1 white">
+        
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15"
+                aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+        
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="aboutNav">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="projectsNav">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="testimonialsNav">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contactNav">Contact</a>
+                    </li>
+                </ul>
+                <!-- Links -->
+        
+            </div>
+            <!-- Collapsible content -->
+        
+        </nav>
+        <!--/.Navbar--></header>
 
+    <main>
+        
 <!-- flyers -->
         <div class="about">
             <h6>General Assembly Presents...</h6>
@@ -45,7 +78,7 @@
             <img src="css/assets/me.png">
             <h2>Full Stack Web Developer!</h2>
             <p>Playing all his hits, from HTML to CSS to JavaScript! You won't want to miss this, so click away!</p>
-            <h2>Bay Area native! Avid musician! Friend to all!</h2>
+            <h2>Avid musician! Jogging enthusiast! Friend to all!</h2>
         </div>  
         
         <div class="projects">
@@ -60,12 +93,21 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img class="d-block w-100" src="css/assets/monument_screenshot.png" alt="First slide">
+                            <!-- <div class="carousel-caption d-none d-md-block">
+                                <h5>Monument Web Page</h5>
+                                <p>A mockup of a outdoor website using HTML and CSS</p> -->
                       </div>
                       <div class="carousel-item">
                         <img class="d-block w-100" src="css/assets/shopping_cart.png" alt="Second slide">
+                            <!-- <div class="carousel-caption d-none d-md-block">
+                                <h5>Shopping Cart</h5>
+                                <p>A shopping cart that displays items on one side that are populated into the other column when clicked</p> -->
                       </div>
                       <div class="carousel-item">
                         <img class="d-block w-100" src="css/assets/todo_screenshot.png" alt="Third slide">
+                            <!-- <div class="carousel-caption d-none d-md-block">
+                                <h5>To Do List</h5>
+                                <p>List that allows for adding, removing, and editing of tasks</p> -->
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -91,9 +133,6 @@
             <h1>SAY HI!</h1>
             <p>Drop me a line below, or connect with me on Linked<a href="http://www.linkedin.com/in/alanjduncan" target="_blank"><i class="fab fa-linkedin-in"></i></a> or the <a href="https://www.facebook.com/profile.php?id=1312531654&viewas=100000686899395&returnto=profile&privacy_source=viewas_chrome_bar" target="_blank"><i class="fab fa-facebook-f"></i></a>ace place</p>
                 
-                
-
-<!-- figure out why the form is not centering -->
             <i class="far fa-comment-alt"></i> 
             <form class="message" method="GET" action="/page">   
                 <input type="text" class="comment" id="commentName" name="name" placeholder="NAME">

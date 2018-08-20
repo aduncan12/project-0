@@ -8,6 +8,10 @@ body {
     background-size: cover;
 }
 
+header {
+    display: none;
+}
+
 aside {
     width: 30%;
     display: flex;
@@ -213,14 +217,14 @@ a:hover {
 .testimonials p {
     font-family: 'CF PunkRockShow';
     font-style: italic;
-    font-size: 3vh;
+    font-size: 2.5vh;
     text-align: justify;
     width: 90%;
-    height: 35vh;
-    margin: 4% auto;
+    height: 40vh;
+    margin:  77% auto 23%;
     line-height: 165%;
     transform: rotate(3deg);
-    position: relative;
+    position: absolute;
     z-index: inherit;
     display: none;
 }
@@ -237,7 +241,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     font-family: QuentinCaps;
-    font-size: 1em;
     text-align: center;
     align-items: center;
 }
@@ -247,7 +250,7 @@ a:hover {
     width: 50vh;
     height: 5vh;
     margin: 3% auto;
-    font-size: 2.5em;
+    font-size: 8vh;
     position: relative;
     text-align: center;
     z-index: inherit;
@@ -258,6 +261,7 @@ a:hover {
     margin: 5% auto;
     position: relative;
     z-index: inherit;
+    font-size: 2.8vh;
 }
 
 form {
@@ -267,14 +271,15 @@ form {
     grid-gap: 2% 2%;
     width: 100%;
     height: 25vh;
-    margin: 5% auto;
-    font-size: .75em;
+    margin: 1% auto;
+    font-size: 1.25vh;
 }
 
 .message input, textarea {
     border: 1px solid #90c192;
     padding: 5px;
 }
+
 #commentName {
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
@@ -298,7 +303,7 @@ form {
     grid-column: 1 / span 2;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .btn {
         width: 35vh;
         margin-left: 8vh;
@@ -306,7 +311,7 @@ form {
     }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 950px) {
     .btn {
         width: 30vh;
         letter-spacing: 1px;
@@ -314,7 +319,7 @@ form {
     }
 }    
 
-@media screen and (max-width: 785px) {
+@media screen and (max-width: 890px) {
     .projects {
         width: 54vh;
         height: 82vh;
@@ -322,7 +327,7 @@ form {
     }
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 800px) {
     .btn {
         width: 30vh;
         letter-spacing: 1px;
@@ -332,52 +337,56 @@ form {
 }
 
 @media screen and (max-width: 650px) {
-    .about {
-        width: 45vh;
-        height: 75vh;
+    body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: lightgrey;
+        background-image: url("assets/tempbackground.jpg");
+        background-size: cover;
+    }
+    aside {
+        display: none;
     }
 
-    .about h1 {
-        width: 45vh;
-        height: 75vh;
+    header {
+        display: flex;
+        width: 100%;
+        height: 7.25vh;
+        background-color: transparent;
     }
 
-    .about h2 {
-        width: 45vh;
-        height: 75vh;
+    /* hamburger */
+    .navbar.navbar-1 .navbar-toggler-icon {
+        background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
     }
 
-    .about p {
-        width: 45vh;
-        height: 75vh;
+    .navbar {
+        flex-direction: row;
+        padding: 0;
     }
 
-    .projects {
-        width: 45vh;
-        height: 75vh;
+    #navbarSupportedContent15 {
+        background-color: white;
+        width: 10%;
     }
 
-    .project h1 {
-
-    }
-
-    .testimonials {
-        width: 45vh;
-        height: 75vh;
-    }
-
-    .testimonials h1 {
-        width: 45vh;
-        height: 75vh;
-    }
-
-    .testimonials p {
-        width: 45vh;
-        height: 75vh;
-    }
-
-    .contact {
-        width: 45vh;
-        height: 75vh;
+    main {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
     }
 }
+
+@media screen and (max-height: 612px) {
+    .testimonials p {
+        font-size: 2.75vh;
+    }
+}
+
+
+
