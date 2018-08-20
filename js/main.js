@@ -48,3 +48,4 @@ setInterval(function() {
     })
 }, 21000);
 // testimonials
+

@@ -78,7 +78,6 @@ a:hover {
     height: 100vh;
     transform: rotate(0deg);  
     position: relative;
-
 }
 
 /* stack of flyers */
@@ -155,12 +154,13 @@ a:hover {
     position: absolute;
     display: flex;
     flex-direction: column;
+    font-family: Flames;
+
     z-index: 3;
 }
 
 .projects h1 {
     /* look into curving header with jquery */
-    font-family: Flames;
     color: #ff8400;
     text-shadow: 1px 1px #FFFFFF;
     width: 50vh;
@@ -171,6 +171,24 @@ a:hover {
     text-align: center;
     letter-spacing: 5px;
     z-index: inherit;
+}
+
+.projects p {
+    font-size: 4vh;
+    margin: 0 2%;
+    color: #84249f;
+    text-shadow: 1px 1px #FFFFFF;
+}
+
+.projects ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-shadow: 1px 1px #FFFFFF;
+    letter-spacing: 1px;
+    font-size: 2.5vh;
+    color: #444444;
 }
 
 #carousel {
