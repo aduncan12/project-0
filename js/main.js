@@ -19,7 +19,7 @@ $('#aboutNav').on('click', function() {
 $('#projects').on('click', function() {
     $('.projects').css("z-index", zFlyers.length++)
     $('.projects').toggleClass('projectsClicked');
-
+    console.log('check')
 });
 
 $('#projectsNav').on('click', function() {
