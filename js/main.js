@@ -7,15 +7,19 @@ for(i = 0; i < mainDivs.length; i++) {
 
 // button links to flyers 
 $('#about').on('click', function() {
-    $('.about').css("z-index", zFlyers.length++);
+    $('.about').css("z-index", zFlyers.length++)
+    $('.about').toggleClass('aboutClicked');
 });
 
 $('#aboutNav').on('click', function() {
     $('.about').css("z-index", zFlyers.length++);
+
 });
 
 $('#projects').on('click', function() {
-    $('.projects').css("z-index", zFlyers.length++);
+    $('.projects').css("z-index", zFlyers.length++)
+    $('.projects').toggleClass('projectsClicked');
+
 });
 
 $('#projectsNav').on('click', function() {
@@ -23,7 +27,8 @@ $('#projectsNav').on('click', function() {
 });
 
 $('#testimonials').on('click', function() {
-    $('.testimonials').css("z-index", zFlyers.length++);
+    $('.testimonials').css("z-index", zFlyers.length++)
+    $('.testimonials').toggleClass('testimonialsClicked');
 });
 
 $('#testimonialsNav').on('click', function() {
@@ -31,7 +36,8 @@ $('#testimonialsNav').on('click', function() {
 });
 
 $('#contact').on('click', function() {
-    $('.contact').css("z-index", zFlyers.length++);
+    $('.contact').css("z-index", zFlyers.length++)
+    $('.contact').toggleClass('contactClicked');
 });
 
 $('#contactNav').on('click', function() {
