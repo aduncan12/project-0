@@ -1,10 +1,10 @@
 body {
     height: 100%;
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     display: flex;
     background-color: lightgrey;
-    background-image: url("assets/tempbackground.jpg");
+    background-image: url("assets/andre-benz-425238-unsplash.jpg");
     background-size: cover;
 }
 
@@ -82,12 +82,12 @@ a:hover {
 
 /* stack of flyers */
 /* about flyer */
-.about {
+.aboutFlyer {
     background: linear-gradient(#fa3d28, #f0f065, #0e83e9);
     width: 54vh;
     height: 82vh;
     transform: rotate(6deg);
-    border: 3.5px solid #FFFFFF;
+    border: 3.4px solid #FFFFFF;
     position: absolute;
     z-index: 4;
     display: flex;
@@ -96,41 +96,35 @@ a:hover {
     align-items: center;
 }
 
-.aboutClicked {
-    width: 60vh;
-    height: 95vh;
-    transform: rotate(0deg);
-}
-
-.about h1 {
+.aboutFlyer h1 {
     color: #000000;
     width: 50vh;
     height: 10vh;
-    margin: 1% auto;
+    margin: 0 auto;
     font-size: 7.5vh;
     letter-spacing: 1.5px;
     text-align: center;
     z-index: inherit;
 }
 
-.about h2 {
+.aboutFlyer h2 {
     color: #000000;
     width: 50vh;
     height: 5vh;
-    margin: 5% auto;
+    margin: 4% auto;
     font-size: 4vh;
     letter-spacing: 1px;
     text-align: center;
     z-index: inherit;
 }
 
-.about h6 {
+.aboutFlyer h6 {
     font-family: "Comic Sans MS", sans-serif;
     font-size: 1.5vh;
     margin: 2% auto;
 }
 
-.about img {
+.aboutFlyer img {
     width: 75%;
     height: 25vh;
     margin: 0 auto;
@@ -139,10 +133,10 @@ a:hover {
     z-index: inherit;
 }
 
-.about p {
+.aboutFlyer p {
     width: 90%;
-    height: 13vh;
-    margin: 3% auto;
+    height: 18vh;
+    margin: 0 auto;
     text-align: justify;
     position: relative;
     font-size: 3vh;
@@ -150,8 +144,43 @@ a:hover {
     z-index: inherit;
 }
 
+#hobbies {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#aboutMusic {
+    transform: rotate(-30deg);
+    text-align: left;
+}
+
+#aboutJog {
+    transform: rotate(47deg);
+    text-align: right;
+}
+
+#aboutFriend {
+    transform: rotate(17deg);
+}
+
+/* .aboutClicked, .projectsClicked, .testimonialsClicked, .contactClicked {
+    width: 60vh;
+    height: 95vh;
+    transform: rotate(0deg);
+} */
+
+.aboutClicked h2, .aboutClicked #aboutMusic, .aboutClicked #aboutJog, .aboutClicked #aboutFriend {
+    height: 8vh;
+}
+
+.aboutClicked p {
+    font-size: 3.5vh;
+    height: 21vh;
+}
+
 /* projects flyer */
-.projects {
+.projectsFlyer {
     background: linear-gradient(135deg, #84249f, #f96437);
     width: 54vh;
     height: 82vh;
@@ -164,13 +193,7 @@ a:hover {
     z-index: 3;
 }
 
-.projectsClicked {
-    width: 60vh;
-    height: 95vh;
-    transform: rotate(0deg);
-}
-
-.projects h1 {
+.projectsFlyer h1 {
     /* look into curving header with jquery */
     color: #ff8400;
     text-shadow: 1px 1px #FFFFFF;
@@ -184,22 +207,30 @@ a:hover {
     z-index: inherit;
 }
 
-.projects p {
+.projectsFlyer p {
     font-size: 4vh;
     margin: 0 2%;
     color: #84249f;
     text-shadow: 1px 1px #FFFFFF;
 }
 
-.projects ul {
+.projectsFlyer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
     text-shadow: 1px 1px #FFFFFF;
     letter-spacing: 1px;
-    font-size: 2.5vh;
-    color: #444444;
+    font-size: 2.75vh;
+    color: #84249f;
+}
+
+.projectsFlyer * li {
+    margin: 3% 2%;
+}
+
+.projectsClicked ul {
+    font-size: 3.25vh;
 }
 
 #carousel {
@@ -209,7 +240,7 @@ a:hover {
 }
 
 /* testimonials flyer */
-.testimonials {
+.testFlyer {
     background: #FFFFFF;
     border: 5px solid #FFFFFF;
     width: 54vh;
@@ -221,14 +252,7 @@ a:hover {
     z-index: 2;
 }
 
-.testimonialsClicked {
-    width: 60vh;
-    height: 95vh;
-    transform: rotate(0deg);
-    font-size: 50vh;
-}
-
-.testimonials h1 {
+.testFlyer h1 {
     font-family: Kingthings Extortion;
     color: #131212;
     width: 50vh;
@@ -241,7 +265,7 @@ a:hover {
     z-index: inherit;
 }
 
-.testimonials img {
+.testFlyer img {
     width: 75%;
     height: 20vh;
     margin: 5% auto;
@@ -249,7 +273,7 @@ a:hover {
     z-index: inherit;
 }
 
-.testimonials p {
+.testFlyer p {
     font-family: 'CF PunkRockShow';
     font-style: italic;
     font-size: 2.5vh;
@@ -264,8 +288,12 @@ a:hover {
     display: none;
 }
 
+.testimonialsClicked {
+    font-size: 50vh;
+}
+
 /* contact flyer */
-.contact {
+.contactFlyer {
     background: linear-gradient(#f0f065,#cde98a, #90c192);
     width: 54vh;
     height: 82vh;
@@ -280,13 +308,7 @@ a:hover {
     align-items: center;
 }
 
-.contactClicked {
-    width: 60vh;
-    height: 95vh;
-    transform: rotate(0deg);
-}
-
-.contact h1 {
+.contactFlyer h1 {
     color: #131212;
     width: 50vh;
     height: 5vh;
@@ -297,7 +319,7 @@ a:hover {
     z-index: inherit;
 }
 
-.contact p {
+.contactFlyer p {
     width: 90%;
     margin: 5% auto;
     position: relative;
@@ -344,6 +366,12 @@ form {
     grid-column: 1 / span 2;
 }
 
+.allClicked {
+    width: 60vh;
+    height: 95vh;
+    transform: rotate(0deg);
+}
+
 @media screen and (max-width: 1000px) {
     .btn {
         width: 35vh;
@@ -356,11 +384,12 @@ form {
         width: 30vh;
         letter-spacing: 1px;
         margin-left: 7vh;
+        font-size: 4vh;
     }
 }    
 
 @media screen and (max-width: 890px) {
-    .projects {
+    .projectsFlyer {
         width: 54vh;
         height: 82vh;
         transform: rotate(-13deg);
@@ -429,7 +458,7 @@ form {
 }
 
 @media screen and (max-height: 612px) {
-    .testimonials p {
+    .testFlyer p {
         font-size: 2.75vh;
     }
 }

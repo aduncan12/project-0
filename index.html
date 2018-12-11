@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<!-- Stylesheets -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pinyon+Script">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fonts/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-<!-- Scripts -->
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous" defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" defer integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" defer integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/main.js" defer></script>
@@ -21,17 +19,13 @@
 </head>
 <body>
         
-
-<!-- vintage on/off toggle switches? -->
     <aside>
-        <!-- <nav> -->
         <nav>
             <button id="about" class="btn btn-primary">About</button>
             <button id="projects" class="btn btn-primary">Projects</button>
             <button id=testimonials class="btn btn-primary">Testimonials</button>
             <button id="contact" class="btn btn-primary">Contact</button>
         </nav>
-        <!-- </nav> -->
     </aside>
     
     <header><!--Navbar-->
@@ -69,17 +63,20 @@
 
     <main>
         
-<!-- flyers -->
-        <div class="about">
+        <div class="aboutFlyer">
             <h6>General Assembly Presents...</h6>
             <h1>Alan Duncan!</h1>
-            <img src="css/assets/me.png">
+            <img src="css/assets/alan.png">
             <h2>Full Stack Web Developer!</h2>
-            <p>Playing all his hits, from HTML to CSS to JavaScript! You won't want to miss this, so click away!</p>
-            <h2>Avid musician! Jogging enthusiast!  Friend to all!</h2>
+            <p>Playing all his hits, from JavaScript to Python to Node.js to React! You won't want to miss this, so click away!</p>
+            <div id="hobbies">
+                <h2 id="aboutMusic">Avid musician!</h2>
+                <h2 id="aboutFriend">Friend to all!</h2>
+                <h2 id="aboutJog">Jogging enthusiast!</h2>
+            </div>
         </div>  
         
-        <div class="projects">
+        <div class="projectsFlyer">
             <h1>PROJECTS</h1>
                 <!-- begin carousel -->
                 <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -109,22 +106,21 @@
                     </a>
                 </div>
                 <!-- end carousel -->
-                <!-- <p>Please enjoy screenshots of some of my projects:</p> -->
                 <ul>
                     <li>4ager - restaurant search tool</li>
                     <li>Pyrrha - music finder</li>
-                    <li>Flux CapacEATor - San Francisco heritage locations</li>
+                    <li>Flux CapacEATor - S.F. heritage locations</li>
                 </ul>
             </div> 
 
-        <div class="testimonials">
-                <h1>The Testimonials</h1>
+        <div class="testFlyer">
+            <h1>The Testimonials</h1>
                 <img src="css/assets/watch.png">
                 <p id="test1">“Alan is extremely confident hard working and dependable His great communication skills and professionalism make him an absolute pleasure to work with Overall he’s a great colleague to have!”<br/>Raj Mahal</p>
                 <p id="test2">“Alan is not only extremely knowledgeable and well-rounded, but is also a great teammate. He’s an attentive listener and communicator who knows how to think critically and problem solve, which makes him an effective and efficient programmer. I’d be very happy to work with him again!”<br/> Sofia Aguirre</p>
                 <p id="test3">"Alan is a very talented web developer and a great team player. He's got a good eye for web interfaces and always comes up with new solutions to problems. Definitely a must-have member at work."<br/>Wai Ka Wong</p>
         </div>
-        <div class="contact">
+        <div class="contactFlyer">
             <h1>SAY HI!</h1>
             <p>Drop me a line below, or connect with me on Linked<a href="http://www.linkedin.com/in/alanjduncan" target="_blank"><i class="fab fa-linkedin-in"></i></a> or the <a href="https://www.facebook.com/profile.php?id=1312531654&viewas=100000686899395&returnto=profile&privacy_source=viewas_chrome_bar" target="_blank"><i class="fab fa-facebook-f"></i></a>ace place</p>
                 
@@ -140,5 +136,6 @@
         </div> 
 
     </main>
+    <!-- <p>Photo by Andre Benz on Unsplash</p> -->
 </body>
 </html>
