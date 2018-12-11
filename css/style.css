@@ -94,6 +94,7 @@ a:hover {
     flex-direction: column;
     font-family: AHDN;
     align-items: center;
+    transition: all 2s ease;
 }
 
 .aboutFlyer h1 {
@@ -164,12 +165,6 @@ a:hover {
     transform: rotate(17deg);
 }
 
-/* .aboutClicked, .projectsClicked, .testimonialsClicked, .contactClicked {
-    width: 60vh;
-    height: 95vh;
-    transform: rotate(0deg);
-} */
-
 .aboutClicked h2, .aboutClicked #aboutMusic, .aboutClicked #aboutJog, .aboutClicked #aboutFriend {
     height: 8vh;
 }
@@ -191,6 +186,7 @@ a:hover {
     flex-direction: column;
     font-family: Flames;
     z-index: 3;
+    transition: all 2s ease;
 }
 
 .projectsFlyer h1 {
@@ -250,6 +246,7 @@ a:hover {
     display: flex;
     flex-flow: column wrap;
     z-index: 2;
+    transition: all 2s ease;
 }
 
 .testFlyer h1 {
@@ -306,6 +303,7 @@ a:hover {
     font-family: QuentinCaps;
     text-align: center;
     align-items: center;
+    transition: all 2s ease;
 }
 
 .contactFlyer h1 {

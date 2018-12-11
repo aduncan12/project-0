@@ -1,21 +1,14 @@
 var mainDivs = $('main').children()
-console.log(mainDivs)
 
 var zFlyers = [];
 for(i = 0; i < mainDivs.length; i++) {
     zFlyers[i] = $(mainDivs[i]).css("z-index");
 }
-console.log(zFlyers)
 
-// var flyerWH = $(this).css("width: 54vh", "height: 82vh")
-// console.log (flyerWH)
-
-// var resize = function() {
-//     if((zFlyers[i]-1) == $(this.length-1)){
-//         (zFlyers[i]-1).toggleClass(flyerWH)
-//     }
-// }
-// console.log(resize)
+// var flyerAnimate = 
+//     $('.aboutFlyer').css("width", "60vh")
+//     $('.aboutFlyer').css("height", "95vh")
+//     $('.aboutFlyer').css("transform", "0deg")
 
 // button links to flyers 
 $('#about').on('click', function() {
